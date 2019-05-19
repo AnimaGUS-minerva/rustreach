@@ -1,0 +1,6 @@
+[package]
+name = "rustreach"
+version = "0.1.0"
+authors = ["Michael Richardson <mcr@sandelman.ca>"]
+
+[dependencies]
