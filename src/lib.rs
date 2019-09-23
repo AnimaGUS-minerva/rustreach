@@ -10,7 +10,6 @@ mod tests {
     use std::io::Read;
     // use std::u8;
     // use self::base64::{decode};
-    // use base64::{encode, decode};
     use base64;
 
     #[test]
@@ -28,16 +27,8 @@ mod tests {
         
         println!("buffer2 => {} {:x?}", buffer.len(), buffer);
         
-        let result = &base64::decode(&mut buffer);
-        println!("buffer => {:x?}", buffer);
-        match result {
-            Ok(data) => {
-                println!("read => {:x?}", data);
-            }
-            Err(err) => {
-                println!("error: {:?}", err);
-            }
-        }
+        let voucher_bytes = &base64::decode(&mut buffer).unwrap();
+        println!("voucher_bytes => {:x?}", voucher_bytes);
     }
 }
 
