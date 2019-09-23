@@ -1,4 +1,6 @@
 extern crate base64;
+extern crate cose;
+//use std::vec::Vec;
 
 
 #[cfg(test)]
