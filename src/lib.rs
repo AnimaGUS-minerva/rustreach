@@ -11,7 +11,7 @@ mod tests {
     // use std::u8;
     // use self::base64::{decode};
     // use base64::{encode, decode};
-    use base64::decode;
+    use base64;
 
     #[test]
     fn it_loads_cbor_1() {
@@ -28,7 +28,7 @@ mod tests {
         
         println!("buffer2 => {} {:x?}", buffer.len(), buffer);
         
-        let result = &decode(&mut buffer);
+        let result = &base64::decode(&mut buffer);
         println!("buffer => {:x?}", buffer);
         match result {
             Ok(data) => {
