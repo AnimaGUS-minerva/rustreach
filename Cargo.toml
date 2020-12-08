@@ -6,3 +6,8 @@ authors = ["Michael Richardson <mcr@sandelman.ca>"]
 [dependencies]
 base64 = "0.10.1"
 cose = { path = "/corp/projects/pandora/riotos/cose-rust" }
+#ring = { path = "/corp/projects/pandora/UPSTREAM/ring" }
+ring = "0.16.15"
+webpki = { path = "/corp/projects/pandora/UPSTREAM/webpki" }
+pem = "0.4"
+x509-parser = "0.7.0"
